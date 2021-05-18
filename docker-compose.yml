@@ -1,0 +1,7 @@
+version: "3.5"
+
+    mongoDatabase:
+        container_name: mongoDatabase
+        image: mongo
+        ports: 
+            - 27000:27017
