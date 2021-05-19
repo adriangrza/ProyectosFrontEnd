@@ -14,7 +14,8 @@ const startServer = async () => {
         resolvers: proyectocontroller
     });
 
-    await mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUnifiedTopology: true});
+    //await mongoose.connect('mongodb://mongo:27000/proyectoTareas', {useNewUrlParser: true, useUnifiedTopology: true});
+    await mongoose.connect('mongodb://localhost:27017/proyectoTareas', {useNewUrlParser: true, useUnifiedTopology: true});
 
     server.applyMiddleware({ app });
 
